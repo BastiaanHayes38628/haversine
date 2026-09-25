@@ -28,3 +28,10 @@ Returns the distance in kilometers as a non-negative float.
 
 - `lat1`, `lon1`: coordinates of the first point in degrees.
 - `lat2`, `lon2`: coordinates of the second point in degrees.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+

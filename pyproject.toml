@@ -1,6 +1,6 @@
 [project]
 name = "haversine"
-version = "0.1.6"
+version = "0.1.7"
 description = "Great-circle distance between two points on Earth."
 requires-python = ">=3.10"
 dependencies = []
